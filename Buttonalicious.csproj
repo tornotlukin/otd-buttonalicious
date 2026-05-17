@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>Buttonalicious</RootNamespace>
+    <AssemblyName>Buttonalicious</AssemblyName>
+    <Version>0.1.0</Version>
+    <Authors>tornotlukin</Authors>
+    <Description>Adds mouse button clicking to pen tool (hover-click and hold-and-tap) when using Kuuuube's Windows Ink Plugin.</Description>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="OpenTabletDriver.Plugin" Version="0.6.7">
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+  </ItemGroup>
+</Project>

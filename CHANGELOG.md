@@ -1,5 +1,13 @@
 # Changelog
 
+## Unreleased
+
+- Renamed in-OTD display names so they don't collide with other plugins' generic "mouse click" labels:
+  - `Mouse Click` → `Buttonalicious Click`
+  - `Mouse Click Tap Watcher` → `Buttonalicious Hold-and-Tap Watcher`
+- Added `metadata.json` next to the DLL so OpenTabletDriver's Plugin Manager UI can display the plugin's name, description, and version when installed manually.
+- README clarified to explain both install paths (Plugin Manager vs manual).
+
 ## 0.1.0 — 2026-05-17
 
 Initial release.

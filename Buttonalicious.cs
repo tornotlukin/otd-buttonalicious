@@ -113,7 +113,7 @@ internal static class Win32
     }
 }
 
-[PluginName("Mouse Click")]
+[PluginName("Buttonalicious Click")]
 public class MouseClickBinding : IStateBinding
 {
     [Property("Button"),
@@ -129,7 +129,7 @@ public class MouseClickBinding : IStateBinding
     [Property("Mode"),
      DefaultPropertyValue("Immediate"),
      PropertyValidated(nameof(ValidModes)),
-     ToolTip("Immediate: click(s) fire the moment the pen button is pressed, at the current cursor position.\nHoldAndTap: pen button arms the click; the next tip tap fires it at the tip position. HoldAndTap requires the 'Mouse Click Tap Watcher' filter to be enabled in the Filters tab.")]
+     ToolTip("Immediate: click(s) fire the moment the pen button is pressed, at the current cursor position.\nHoldAndTap: pen button arms the click; the next tip tap fires it at the tip position. HoldAndTap requires the 'Buttonalicious Hold-and-Tap Watcher' filter to be enabled in the Filters tab.")]
     public string Mode { get; set; } = "Immediate";
 
     [Property("Click Hold (ms)"),
@@ -188,7 +188,7 @@ public class MouseClickBinding : IStateBinding
     }
 }
 
-[PluginName("Mouse Click Tap Watcher")]
+[PluginName("Buttonalicious Hold-and-Tap Watcher")]
 public class MouseClickTipWatcher : IPositionedPipelineElement<IDeviceReport>
 {
     public event Action<IDeviceReport>? Emit;

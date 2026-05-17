@@ -16,12 +16,12 @@ The plugin DLL exposes two `[PluginName]`-decorated classes:
 
 | In OTD's GUI | Type | Where to set it |
 |--------------|------|-----------------|
-| **Mouse Click** | Binding | Bindings tab → click a Pen Button slot → pick "Mouse Click" |
-| **Mouse Click Tap Watcher** | Filter | Filters tab → add "Mouse Click Tap Watcher" → enable |
+| **Buttonalicious Click** | Binding | Bindings tab → click a Pen Button slot → pick "Mouse Click" |
+| **Buttonalicious Hold-and-Tap Watcher** | Filter | Filters tab → add "Mouse Click Tap Watcher" → enable |
 
 The filter is **only required for HoldAndTap mode**. For everything else, install the binding and ignore the filter.
 
-## Properties on the `Mouse Click` binding
+## Properties on the `Buttonalicious Click` binding
 
 | Property | Type | Default | Notes |
 |----------|------|---------|-------|
@@ -62,8 +62,8 @@ Plugins menu → Open Plugin Manager → search "Buttonalicious" → Install. OT
 
 **Then configure it:**
 
-- **Bindings** tab → click a Pen Button slot → pick **Mouse Click** → set the properties you want → **Apply**.
-- If you want HoldAndTap, also enable **Mouse Click Tap Watcher** in the **Filters** tab.
+- **Bindings** tab → click a Pen Button slot → pick **Buttonalicious Click** → set the properties you want → **Apply**.
+- If you want HoldAndTap, also enable **Buttonalicious Hold-and-Tap Watcher** in the **Filters** tab.
 
 ## Build from source
 

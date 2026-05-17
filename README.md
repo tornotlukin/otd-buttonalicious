@@ -45,16 +45,25 @@ In HoldAndTap modes, "Multiple Taps Per Arm" decides whether every tap while hel
 
 ## Install
 
+**Option A — through OpenTabletDriver's Plugin Manager (recommended, once listed):**
+
+Plugins menu → Open Plugin Manager → search "Buttonalicious" → Install. OTD downloads the release, extracts it, and writes the `metadata.json` automatically.
+
+**Option B — manual install:**
+
 1. Download the latest release ZIP from the [Releases](../../releases) page.
-2. Extract the DLL into your OpenTabletDriver plugins folder:
+2. Extract its contents into your OpenTabletDriver plugins folder:
 
    `%LOCALAPPDATA%\OpenTabletDriver\Plugins\Buttonalicious\`
 
-3. Restart OpenTabletDriver.
-4. **Bindings** tab → click a Pen Button slot → pick **Mouse Click** → set the properties you want → **Apply**.
-5. If you want HoldAndTap, also enable **Mouse Click Tap Watcher** in the **Filters** tab.
+   The folder should end up containing both `Buttonalicious.dll` and `metadata.json`. The DLL is what OTD actually loads; the metadata.json is what OTD's Plugin Manager UI uses to display the plugin's name, description, and version. If you only have the DLL, the plugin still works — you just won't see info about it in the Plugin Manager list.
 
-Or install through OpenTabletDriver's in-app **Plugin Manager** (Plugins menu → Open Plugin Manager → search "Buttonalicious"), once the plugin is listed in the official Plugin-Repository.
+3. Restart OpenTabletDriver.
+
+**Then configure it:**
+
+- **Bindings** tab → click a Pen Button slot → pick **Mouse Click** → set the properties you want → **Apply**.
+- If you want HoldAndTap, also enable **Mouse Click Tap Watcher** in the **Filters** tab.
 
 ## Build from source
 

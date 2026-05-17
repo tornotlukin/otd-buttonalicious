@@ -1,0 +1,14 @@
+{
+    "Name": "Buttonalicious",
+    "Owner": "tornotlukin",
+    "Description": "Adds mouse button clicking to pen tool (hover-click and hold-and-tap) when using kuuuube's Windows Ink Plugin",
+    "PluginVersion": "0.1.0.0",
+    "SupportedDriverVersion": "0.6.7.0",
+    "MaxSupportedDriverVersion": null,
+    "RepositoryUrl": "https://github.com/tornotlukin/otd-buttonalicious",
+    "DownloadUrl": "https://github.com/tornotlukin/otd-buttonalicious/releases/download/v0.1.0/Buttonalicious-0.1.0.zip",
+    "CompressionFormat": "zip",
+    "SHA256": "7836A9FACD7BE15DCD4E3921E654FF400CEF59436F9BA384995BC49E446A1EF0",
+    "WikiUrl": "https://github.com/tornotlukin/otd-buttonalicious/blob/main/README.md",
+    "LicenseIdentifier": "GPL-3.0-only"
+}

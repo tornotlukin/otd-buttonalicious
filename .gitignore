@@ -16,3 +16,4 @@ Thumbs.db
 
 ## Release packaging
 *.zip
+release-staging/

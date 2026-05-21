@@ -5,14 +5,20 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Buttonalicious</RootNamespace>
     <AssemblyName>Buttonalicious</AssemblyName>
-    <Version>0.1.0</Version>
+    <Version>0.3.0</Version>
     <Authors>tornotlukin</Authors>
-    <Description>Adds mouse button clicking to pen tool (hover-click and hold-and-tap) when using Kuuuube's Windows Ink Plugin.</Description>
+    <Description>Adds mouse button clicking (and pen-channel synthesis) to pen tool when using the Windows Ink output mode. Single/double click, hold-and-tap, and a Pen Tap mode that synthesizes pen-channel clicks for Windows Ink apps.</Description>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="OpenTabletDriver.Plugin" Version="0.6.7">
+      <Private>false</Private>
+      <ExcludeAssets>runtime</ExcludeAssets>
+    </PackageReference>
+    <PackageReference Include="HidSharpCore" Version="1.2.1.1">
+      <PrivateAssets>all</PrivateAssets>
       <Private>false</Private>
       <ExcludeAssets>runtime</ExcludeAssets>
     </PackageReference>
